@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Yummy Foods</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS File Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="text-center">
+      <h1 class="text-4xl font-semibold py-3">Yummy Yummy Foods</h1>
+      <div class="mt-4 flex flex-col md:flex-row justify-center items-center gap-2">
+        <input id="input-field" type="text" placeholder="Type here" class="input input-bordered input-secondary w-full max-w-xs" />
+        <button onclick="searchMeals()" class="btn btn-secondary text-white">Search</button>
+      </div>
+    </header>
+    <main>
+      <section class="w-10/12 mx-auto mt-5">
+        <div id="meals-container" class="grid md:grid-cols-3 gap-4"></div>
+        <!-- The button to open modal -->
+        <!-- <a href="#modalDetails" class="btn">open modal</a> -->
+        <div class="modal" id="modalDetails">
+          <div class="modal-box">
+            <h3 id="modal-title" class="font-bold text-2xl">Hello!</h3>
+            <div id="modal-image" class="mt-4">
+
+            </div>
+            <div class="modal-action">
+              <a href="#" class="btn">X</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/meals.js"></script>
+  </body>
+</html>
